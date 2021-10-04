@@ -1,0 +1,433 @@
+body {
+    background-color: #F9FAFF;
+    margin: 0;
+  
+    
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+#header-logo {
+    padding: 48px;}
+
+#globalNav{
+    margin-right: 24px;}
+
+.nav-item {
+    padding: 24px;
+    font-family: montserrat;
+    font-size: 18px;
+    transition:  .2s ease-in-out;}
+.nav-item:hover {
+    color: #F6BB43;
+    cursor: url("https://cdn.custom-cursor.com/db/cursor/32/Watermelon.png"), pointer;
+ 
+}
+ 
+ul {
+    list-style: none;
+    display: flex;}
+    
+
+
+#hero {
+       font-family: montserrat;
+       padding-bottom: 88px;
+       align-items: center;
+       margin: auto;
+       display: flex;
+       justify-content: center;
+       max-width: 1100px;
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-template-rows: 1fr;
+       grid-template-areas: 
+       "hero_image verticalLine heroText";}
+
+#hero_image {
+    margin: 0;
+    width: 425px;
+    height: auto;
+    padding-right: 16px;
+    padding-left: 48px; }
+
+.verticalLine {
+    height: 450px;
+    border-left: 1px solid #000000;  }
+
+.heroText {
+    text-align: left;
+    margin: auto;
+    width: 685px;
+    padding-left: 24px;
+    padding-right: 24px;
+    min-width: 300px;}
+
+.heroText h1 {
+    font-size: 36px;
+    font-weight: 400;}
+
+.heroText p {
+    font-weight: 300;
+    font-size: 36px;}
+
+.moreButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;}
+
+span > .text {
+    font-family: montserrat;
+    font-style: normal;
+    font-weight: 300;}
+
+
+.the-arrow {
+    width: 20px;
+   
+    transition: all 0.2s;
+}
+.the-arrow.-left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.the-arrow.-left > .shaft {
+    width: 0;
+    height: 2px;
+    background-color: #F6BB43;
+}
+.the-arrow.-left > .shaft:before, .the-arrow.-left > .shaft:after {
+    width: 0;
+    background-color: #F6BB43;
+    height: 2px;
+}
+
+
+.the-arrow.-right {
+    top: 50%;
+    padding-left: 20px;
+}
+.the-arrow.-right > .shaft {
+    width: 2px;
+    transition-delay: .2s;
+}
+.the-arrow.-right > .shaft:before, .the-arrow.-right > .shaft:after {
+    width: 16px;
+    transition-delay: 0.3s;
+    transition: all .2s;
+}
+.the-arrow.-right > .shaft:before {
+    transform: rotate(40deg);
+}
+.the-arrow.-right > .shaft:after {
+    transform: rotate(-40deg);
+}
+.the-arrow > .shaft {
+    background-color: black;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: all .2s;
+    transition-delay: 0;
+    will-change: transform;
+}
+.the-arrow > .shaft:before, .the-arrow > .shaft:after {
+    background-color: black;
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all .2s;
+    transition-delay: 0;
+}
+.the-arrow > .shaft:before {
+    transform-origin: top right;
+}
+.the-arrow > .shaft:after {
+    transform-origin: bottom right;
+}
+.animated-arrow {
+    display: inline-block;
+    color: black;
+    font-size: 24px;
+    font-weight: 300;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.2s;
+}
+.animated-arrow:hover {
+    color: black;
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft {
+    width: 48px;
+    transition-delay: .2s;
+    background-color: #F6BB43;
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft:before, .animated-arrow:hover > .the-arrow.-left > .shaft:after {
+    width: 20px;
+    transition-delay: 0.1s;
+    background-color: #F6BB43;
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft:before {
+    transform: rotate(40deg);
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft:after {
+    transform: rotate(-40deg);
+}
+.animated-arrow:hover > .main {
+  
+    transform: translateX(80px);
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft {
+    width: 0;
+    transform: translateX(200%);
+    transition-delay: 0;
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before, .animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
+    width: 0;
+    transition-delay: 0;
+    transition: all .2s;
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before {
+    transform: rotate(0);
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
+    transform: rotate(0);
+}
+.animated-arrow > .main {
+    display: flex;
+    align-items: center;
+    transition: all .2s;
+}
+.animated-arrow > .main > .text {
+    margin: 0 16px 0 0;
+    line-height: 1;
+}
+.animated-arrow > .main > .the-arrow {
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+#projectsSection {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    height: 1100px;
+    width: auto;
+    padding: 48px;}
+
+.projects_container {
+    display: grid;
+    margin: auto;
+    height: 100%;
+    min-width: min-content;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50% ;
+    grid-template-areas: 
+    "deptOfEd pgk"
+    "govid grnbox";
+    gap: 30px 30px;}
+
+.projectTile {
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    height: 100%;
+    min-width: 300px;
+    align-items: center;
+    display: flex;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: ease-in-out .4s;   
+}
+
+.projectName {
+    text-align: center;
+    color: #ffffff;
+}
+
+.project_header {
+    text-align: center;}
+
+.project_type {
+    text-align: center;}
+
+
+#deptOfEd{
+    grid-area: deptOfEd;
+    background-image: url("../Assets/doeTileImage.png");
+   
+    font-family: montserrat;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+
+.projectTile:hover {
+    background-color: rgba(15, 15, 15, 0.8);
+    
+}
+
+#pgk {
+    grid-area: pgk;
+    background-image: url("../Assets/pgkTileImage.png");
+    font-family: montserrat;
+    justify-content: center;
+    align-content: center;}
+
+#govid {
+    grid-area: govid;
+    background-image: url("../Assets/ govidTileImage.png");
+    font-family: montserrat;
+    justify-content: center;
+    align-content: center;}
+
+#grnbox {
+    grid-area: grnbox;
+    background-image: url("../Assets/grnboxTileImage.png");
+    background-position: center;
+    background-size: 100%;
+    font-family: montserrat;
+    justify-content: center;
+    align-content: center;}
+
+
+
+
+
+#skillsSection {
+    margin: 300px, 0;
+    height: auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}    
+
+#skillsCircle {
+    display: grid;
+    grid-template-rows: 7fr;
+    grid-template-columns: 1fr;
+    align-content: space-between;
+    font-family: montserrat;
+    
+    line-height: auto;
+    text-align: center;
+    width:100%;
+    height: 650px;
+    background-color: #F6BB43;
+    margin: auto;
+    
+}
+
+.skill {
+    font-size: 32px;
+    transition: ease-in .2s;
+}
+.skill:hover {
+    font-size: 34px;
+}
+
+#skill1 {
+    width:auto;
+    height: auto;
+    left: auto;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.16em;
+    color: #000000;}
+#skill2 {
+    width:auto;
+    height: auto;
+    left: auto;
+    top: auto;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    color: #000000;}
+#skill3 {
+    width:auto;
+    height: auto;
+    left: auto;
+    top: auto;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: #000000;}
+#skill4 {
+    width:auto;
+    height: auto;
+    left: auto;
+    top: auto;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    color: #000000;}
+#skill5 {
+    width:auto;
+    height: auto;
+    left: auto;
+    top: auto;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.0em;
+    color: #000000;}
+#skill6 {
+    width:auto;
+    height: auto;
+    left: auto;
+    top: auto;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #000000;}
+#skill7 {
+    width:auto;
+    height: auto;
+    left: auto;
+    top: auto;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0.09em;
+    color: #000000;}
+
+
+
+
+footer {
+    font-family: Montserrat;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 48px;
+}
+
+footer >div > h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+footer > div > p {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+ footer > div > a {
+    font-size: 16px;
+    color: white;
+    font-weight: 200;
+}
