@@ -12,7 +12,11 @@ header {
     align-items: center;}
 
 #header-logo {
-    padding: 48px;}
+    padding: 48px;
+}
+.logo {
+    max-height: 50px;
+}
 
 #globalNav{
     margin-right: 24px;}

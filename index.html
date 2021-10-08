@@ -15,7 +15,7 @@
 <body>
     <header>
         <div id="header-logo">
-            <img src="Assets/small_logo.png" alt="Katie Brown Logo">
+            <img src="Assets/myLogo.png" class="logo" alt="Katie Brown Logo">
         </div>
         <div id="globalNav">
             <ul>
@@ -55,9 +55,9 @@
     </section>
 
 
-    <section id="projectsSection">
+    <section id="projectsSection" >
         <div class="projects_container">
-            <div id="deptOfEd" class="projectTile">
+            <div id="deptOfEd" class="projectTile lazy">
                 <div class="projectName">
                     <h1 class="project_header">Department of Education</h1>
                     <p class="project_type">Web Redesign</p>
@@ -66,7 +66,7 @@
             </div>
 
 
-            <div id="pgk" class="projectTile">
+            <div id="pgk" class="projectTile lazy">
                 <div class="projectName">
                     <h1 class="project_header">Project Giving Kids</h1>
                     <p class="project_type">Web Redesign</p>
@@ -119,4 +119,10 @@
         </div>
     </footer>
 </body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.lazy.min.js"></script>
+<script src="js/index.js"></script>
+
 </html>
