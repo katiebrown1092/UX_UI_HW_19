@@ -90,6 +90,8 @@ span > .text {
     font-weight: 300;}
 
 
+
+
 .the-arrow {
     width: 20px;
    
@@ -110,7 +112,6 @@ span > .text {
     background-color: #F6BB43;
     height: 2px;
 }
-
 
 .the-arrow.-right {
     top: 50%;
@@ -217,8 +218,6 @@ span > .text {
 .animated-arrow > .main > .the-arrow {
     position: relative;
 }
-
-
 
 
 
