@@ -11,8 +11,12 @@ header {
     justify-content: space-between;
     align-items: center;}
 
-#header-logo {
-    padding: 48px;}
+#header-logo img {
+    padding: 48px;
+    height: 64px;
+    width: auto;
+}
+    
 
 #globalNav{
     margin-right: 24px;}
